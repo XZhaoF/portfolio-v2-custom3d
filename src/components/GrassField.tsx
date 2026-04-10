@@ -245,10 +245,10 @@ export default function GrassField() {
   const geoParams = useControls('Grass Geometry', {
     bladeCount:      { value: 1_000_000, min: 50_000, max: 2_000_000, step: 50_000 },
     bladesPerClump:  { value: 15, min: 3, max: 40, step: 1 },
-    clumpRadius:     { value: 0.45, min: 0.05, max: 2.0, step: 0.05 },
-    bladeWidth:      { value: 0.2, min: 0.02, max: 0.25, step: 0.01 },
+    clumpRadius:     { value: 0.75, min: 0.05, max: 2.0, step: 0.05 },
+    bladeWidth:      { value: 0.22, min: 0.02, max: 0.25, step: 0.01 },
     bladeHeight:     { value: 0.7, min: 0.1, max: 1.5, step: 0.05 },
-    heightVariation: { value: 0.4, min: 0, max: 1.0, step: 0.05 },
+    heightVariation: { value: 0.55, min: 0, max: 1.0, step: 0.05 },
     tipOffset:       { value: 0.1, min: 0, max: 0.4, step: 0.02 },
     windAngleJitter: { value: 1.2, min: 0, max: 3.14, step: 0.1 },
   })
@@ -264,10 +264,10 @@ export default function GrassField() {
     contrast:           { value: 1.0, min: 0.5, max: 3.0, step: 0.05 },
     brightness:         { value: -0.3, min: -0.3, max: 0.5, step: 0.02 },
     backlightIntensity: { value: 3.0, min: 0, max: 3.0, step: 0.1 },
-    tipGlow:            { value: 0, min: 0, max: 0.3, step: 0.01 },
+    tipGlow:            { value: 0.05, min: 0, max: 0.3, step: 0.01 },
     baseDarken:         { value: 0.9, min: 0, max: 0.9, step: 0.05 },
-    fogNear:            { value: 45, min: 0, max: 60, step: 1 },
-    fogFar:             { value: 115, min: 20, max: 200, step: 5 },
+    fogNear:            { value: 25, min: 0, max: 60, step: 1 },
+    fogFar:             { value: 85, min: 20, max: 200, step: 5 },
   })
 
   const grassTexture = useMemo(() => {

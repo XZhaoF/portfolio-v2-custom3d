@@ -17,7 +17,7 @@ export default function Scene() {
     if (initialized.current) return
     initialized.current = true
 
-    camera.lookAt(0, 0.8, -30)
+    camera.lookAt(-6.25, 1.51, -53.46)
 
     scene.fog = new THREE.Fog(FOG_COLOR, 15, 75)
     scene.background = new THREE.Color(FOG_COLOR)
@@ -41,7 +41,7 @@ export default function Scene() {
       <directionalLight position={[5, 12, 8]} intensity={0.3} color="#fff8f0" />
       <hemisphereLight args={['#e8e8e8', '#3a6b1e', 0.25]} />
 
-      <OrbitControls makeDefault />
+      <OrbitControls makeDefault target={[-6.25, 1.51, -53.46]} />
 
       <SkyDome />
       <Ground />

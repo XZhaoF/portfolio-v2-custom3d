@@ -59,9 +59,9 @@ export default function Ground() {
   const terrain = useTerrainParams()
 
   const params = useControls('Ground', {
-    darken:  { value: 0.45, min: 0.1, max: 1.0, step: 0.05 },
-    fogNear: { value: 15, min: 0, max: 60, step: 1 },
-    fogFar:  { value: 75, min: 20, max: 200, step: 5 },
+    darken:  { value: 0.65, min: 0.1, max: 1.0, step: 0.05 },
+    fogNear: { value: 30, min: 0, max: 60, step: 1 },
+    fogFar:  { value: 95, min: 20, max: 200, step: 5 },
   })
 
   const grassTexture = useMemo(() => {

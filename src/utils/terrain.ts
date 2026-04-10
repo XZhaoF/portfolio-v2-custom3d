@@ -8,9 +8,9 @@ export interface TerrainParams {
 
 export function useTerrainParams(): TerrainParams {
   return useControls('Terrain', {
-    largeAmp:  { value: 1.0, min: 0, max: 5.0, step: 0.1 },
-    mediumAmp: { value: 0.5, min: 0, max: 3.0, step: 0.05 },
-    smallAmp:  { value: 0.2, min: 0, max: 1.5, step: 0.05 },
+    largeAmp:  { value: 3, min: 0, max: 5.0, step: 0.1 },
+    mediumAmp: { value: 1.5, min: 0, max: 3.0, step: 0.05 },
+    smallAmp:  { value: 0.4, min: 0, max: 1.5, step: 0.05 },
   })
 }
 
